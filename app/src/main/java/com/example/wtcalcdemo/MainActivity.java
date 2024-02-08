@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         //unit as Kgs (if converting from pounds to kilos) and
         //Lbs (if converting kilos to pounds)
 
+        //Added new line
         // Button click
         btnConvertWt.setOnClickListener(new View.OnClickListener() {
             @Override
