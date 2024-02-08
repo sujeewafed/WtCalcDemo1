@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         //unit as Kgs (if converting from pounds to kilos) and
         //Lbs (if converting kilos to pounds)
 
+        // Button click
         btnConvertWt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -91,7 +92,6 @@ public class MainActivity extends AppCompatActivity {
                 else if(radGroupConv.getCheckedRadioButtonId() == R.id.radBtnKgsToLbs && Integer.parseInt(editTextInputWt.getText().toString()) <500) {
                     outputWtInKilos = Integer.parseInt(editTextInputWt.getText().toString())*2.2;
                     txtViewResults.setText("Lbs" + df.format(outputWtInKilos));
-                    //Comment
                 }
             }
         });
